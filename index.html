@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tablero colaborativo</title>
+  <style>
+    canvas { border: 1px solid black; cursor: crosshair; }
+    #controls { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    Color: <input type="color" id="colorPicker" value="#000000">
+  </div>
+  <canvas id="canvas" width="800" height="600"></canvas>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="cliente.js"></script>
+</body>
+</html>
